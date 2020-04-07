@@ -4,12 +4,17 @@ public class Animals implements Comparable<Animals> {
     private String name;
     private String group;
     private String habitat;
+    private long PopulationSize;
 
-    public Animals(String name, String group, String habitat, String populationSize) {
+    public Animals(String name, String group, String habitat, long populationSize) {
         this.name = name;
         this.group = group;
         this.habitat = habitat;
         PopulationSize = populationSize;
+    }
+
+    public Animals(String name, String group, String habitat, int[] arrs) {
+
     }
 
     public String getName() {
@@ -36,15 +41,15 @@ public class Animals implements Comparable<Animals> {
         this.habitat = habitat;
     }
 
-    public String getPopulationSize() {
+    public long getPopulationSize() {
         return PopulationSize;
     }
 
-    public void setPopulationSize(String populationSize) {
+    public void setPopulationSize(int populationSize) {
         PopulationSize = populationSize;
     }
 
-    private String PopulationSize;
+
 
 
 
